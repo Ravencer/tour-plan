@@ -702,4 +702,10 @@ template {
     width: 99px;
   }
 }
+
+@media (max-width: 430px) {
+  .hotel-info__description {
+    max-width: 280px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
