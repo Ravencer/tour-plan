@@ -170,21 +170,45 @@
             </div>
             <button class="button booking__button">View Other Options</button>
           </div>
-        <div class="map">
-          <iframe 
-          src="https://yandex.ru/map-widget/v1/?um=constructor%3Ace202ff57eb20acdd92822f8e8b834d521aab74cb2381ea8f6cb8c1e8f8b6e25&amp;source=constructor" 
-          width="100%" 
-          height="213" 
-          frameborder="0">
-        </iframe>
-        </div>
+          <div id="map" class="map"></div>
           
         </div>
       </div>
     </div>
   </div>
-  
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
+  <script 
+  src="https://api-maps.yandex.ru/2.1/?apikey=14b8290f-1dae-47e6-9798-de5901033a31&lang=ru_RU" 
+  type="text/javascript">
+  </script>
+  <script type="text/javascript">
+    // Функция ymaps.ready() будет вызвана, когда
+    // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
+    ymaps.ready(init);
+    function init(){
+        // Создание карты.
+        var myMap = new ymaps.Map("map", {
+            // Координаты центра карты.
+            // Порядок по умолчанию: «широта, долгота».
+            // Чтобы не определять координаты центра карты вручную,
+            // воспользуйтесь инструментом Определение координат.
+            center: [7.8381095967729015,98.29892085940638],
+            
+            // Уровень масштабирования. Допустимые значения:
+            // от 0 (весь мир) до 19.
+            zoom: 17
+        });
+        var myGeoObject = new ymaps.GeoObject({
+    geometry: {
+        type: "Point", // тип геометрии - точка
+        coordinates: [7.83810825941045,98.29888599068919] // координаты точки
+              }
+        });
+
+// Размещение геообъекта на карте.
+myMap.geoObjects.add(myGeoObject); 
+    }
+</script>
 </body>
 </html>
