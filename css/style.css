@@ -1102,11 +1102,24 @@ template {
   .newsletter {
     padding: 76px 0 83px 0;
   }
+  .newsletter-title__strong {
+    font-size: 30px;
+    font-weight: 600;
+  }
   .newsletter__title {
     margin-bottom: 37px;
+    font-size: 20px;
+    font-weight: 300;
   }
   .subscribe {
     width: 100%;
+  }
+  .subscribe__button {
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .subscribe__input {
+    padding-left: 20px;
   }
 }
 
