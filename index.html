@@ -190,8 +190,37 @@
     </div>
   </section>
   <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
   <script src="https://api-maps.yandex.ru/2.1/?apikey=14b8290f-1dae-47e6-9798-de5901033a31&lang=ru_RU" 
-  ></script>
-  <script defer src="js/main.js"></script>
+  >
+  </script>
+  <script defer>
+    // Функция ymaps.ready() будет вызвана, когда
+    // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
+    ymaps.ready(init);
+    function init(){
+        // Создание карты.
+        var myMap = new ymaps.Map("map", {
+            // Координаты центра карты.
+            // Порядок по умолчанию: «широта, долгота».
+            // Чтобы не определять координаты центра карты вручную,
+            // воспользуйтесь инструментом Определение координат.
+            center: [7.8381095967729015,98.29892085940638],
+            
+            // Уровень масштабирования. Допустимые значения:
+            // от 0 (весь мир) до 19.
+            zoom: 17
+        });
+        var myGeoObject = new ymaps.GeoObject({
+    geometry: {
+        type: "Point", // тип геометрии - точка
+        coordinates: [7.83810825941045,98.29888599068919] // координаты точки
+              }
+        });
+
+// Размещение геообъекта на карте.
+myMap.geoObjects.add(myGeoObject); 
+    }
+</script>
 </body>
 </html>
