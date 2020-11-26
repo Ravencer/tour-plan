@@ -175,7 +175,7 @@
       </div>
     </div>
   </div>
-  <section class="newsletter">
+  <section class="newsletter parallax-window" data-parallax="scroll" data-image-src="img/newsletter-bg.jpg">
     <div class="newsletter-wrapper">
       <h2 class="newsletter-title newsletter__title">
         subscribe to our
@@ -191,7 +191,7 @@
   </section>
   <section class="reviews">
     <div class="container">
-      <h2 class="reviews__title">What people thinks about us</h2>
+      <h2 class="reviews__title">What people think about us</h2>
     <div class="swiper-container reviews-slider">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
@@ -210,6 +210,24 @@
 
             </div>
             <p class="reviews-slider__text">It was very nice hotel with cleanliness. Staff behavior was good and polite. They welcome us very well. Issue was only that Lift was not in working and we were allotted to 3rd floor and amenities articles were in corner of gallery which were giving bad feeling. Breakfast was good and support of the staff was also very nice. Location is not good as per atmosphere, it is very nearby most of the popular places but self location in a narrow street is not good. Overall it was a good experience and could recommend. </p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="reviews-slider__item">
+            <div class="reviews-slider__profile">
+              <img src="img/reviews-avatar-3.jpg" alt="Photo: Karen Smith" class="reviews-slider__avatar">
+              <h3 class="reviews-slider__username">Karen Smith</h3>
+              <span class="reviews-slider__date">Stayed 05 Feb, 2017</span>
+              <div class="reviews-slider__rating">
+                <img src="img/Star.svg" alt="star">
+                <img src="img/Star.svg" alt="star">
+                <img src="img/Star.svg" alt="star">
+                <img src="img/Star.svg" alt="star">
+                <img src="img/Star.svg" alt="star">
+              </div>
+
+            </div>
+            <p class="reviews-slider__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae cumque dolorem enim omnis adipisci placeat, laudantium perferendis! Ullam repellendus eaque placeat voluptates sed obcaecati? Illum aliquid voluptatum iste ratione dolor fuga perferendis, molestiae tenetur, obcaecati blanditiis, impedit in laboriosam numquam vero ab earum quis tempore eaque quas architecto quidem alias commodi doloremque ducimus! Ut officiis atque mollitia numquam adipisci suscipit sit nam. Voluptate eaque quisquam ullam beatae esse doloremque, molestiae voluptates labore et amet? Itaque aliquid optio iste repudiandae delectus rerum quisquam reprehenderit explicabo vel vero? Dolor harum obcaecati illo ipsa pariatur cumque! Quasi, dolore adipisci delectus sapiente fugiat totam!</p>
           </div>
         </div>
         <div class="swiper-slide">
@@ -240,38 +258,13 @@
     </div>
   </div>
   </section>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="js/parallax.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
   <script src="https://api-maps.yandex.ru/2.1/?apikey=14b8290f-1dae-47e6-9798-de5901033a31&lang=ru_RU" 
   >
   </script>
-  <script defer>
-    // Функция ymaps.ready() будет вызвана, когда
-    // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
-    ymaps.ready(init);
-    function init(){
-        // Создание карты.
-        var myMap = new ymaps.Map("map", {
-            // Координаты центра карты.
-            // Порядок по умолчанию: «широта, долгота».
-            // Чтобы не определять координаты центра карты вручную,
-            // воспользуйтесь инструментом Определение координат.
-            center: [7.8381095967729015,98.29892085940638],
-            
-            // Уровень масштабирования. Допустимые значения:
-            // от 0 (весь мир) до 19.
-            zoom: 17
-        });
-        var myGeoObject = new ymaps.GeoObject({
-    geometry: {
-        type: "Point", // тип геометрии - точка
-        coordinates: [7.83810825941045,98.29888599068919] // координаты точки
-              }
-        });
-
-// Размещение геообъекта на карте.
-myMap.geoObjects.add(myGeoObject); 
-    }
-</script>
+  <script defer src="js/main.js"></script>
 </body>
 </html>

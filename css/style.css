@@ -841,7 +841,6 @@ template {
 .newsletter {
   position: relative;
   padding: 98px 0 87px 0;
-  background-image: url(../img/newsletter-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -918,7 +917,8 @@ template {
   border: none;
   background-color: #EC1F46;
   color: #ffffff;
-  min-width: 65px;
+  width: 65px;
+  overflow: hidden;
 }
 
 .reviews {
@@ -1141,6 +1141,11 @@ template {
     max-width: 734px;
     width: 92%;
   }
+  .reviews__title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 50px;
+  }
 }
 
 @media (max-width: 760px) {
@@ -1293,6 +1298,17 @@ template {
 @media (max-width: 430px) {
   .hotel-info__description {
     max-width: 280px;
+  }
+}
+
+@media (max-width: 320px) {
+  .reviews__title {
+    font-size: 18px;
+    line-height: 23px;
+    font-weight: bold;
+    max-width: 245px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 /*# sourceMappingURL=style.css.map */
