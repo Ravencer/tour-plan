@@ -17,8 +17,8 @@ var reviewsSlider = new Swiper(".reviews-slider", {
   }
 });
 $('.parallax-window').parallax({
-  imageSrc: '../img/newsletter-bg.jpg',
-  speed: 0.001
+  imageSrc: 'img/newsletter-bg.jpg',
+  speed: 0.01
 });
 // Функция ymaps.ready() будет вызвана, когда
     // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
