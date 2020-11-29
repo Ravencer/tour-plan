@@ -3,7 +3,6 @@
 @media (max-width: 1200px)
   .container
     max-width: 960px
-  
   .hotel
     &-slider
       &__image
@@ -15,6 +14,14 @@
   .card
     width: 230px
     height: 230px
+  .packages-grid
+    justify-content: space-evenly
+    grid-gap: 30px
+    grid-template-columns: repeat(auto-fit, 450px)
+    &__item
+      width: 450px
+  .represented-item
+    width: 100%
 @media (max-width: 992px)
   .container,
   .newsletter-wrapper
@@ -61,7 +68,14 @@
   .card
     width: 340px
     height: 250px
-    
+  .represented-item
+    display: none
+  .packages-grid
+    justify-content: space-evenly
+    grid-gap: 15px
+    grid-template-columns: repeat(auto-fit, 280px)
+    &__item
+      width: 280px
 @media (max-width: 768px)
   .container, .newsletter-wrapper
     max-width: 734px
@@ -177,13 +191,13 @@
       padding-left: 20px
   .card
     width: 100%
-    
-    
 @media (max-width: 430px)
   .hotel
     &-info
       &__description
         max-width: 280px
+  .packages-grid
+    grid-gap: 30px
 @media (max-width: 320px)
   .reviews
     padding-bottom: 0
