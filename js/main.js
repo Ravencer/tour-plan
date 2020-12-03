@@ -20,6 +20,10 @@ $('.parallax-window').parallax({
   imageSrc: 'img/newsletter-bg.jpg',
   speed: 0.01
 });
+var menuButton = document.querySelector(".menu-button");
+menuButton.addEventListener('click', function(){
+  document.querySelector(".navbar-bottom").classList.toggle('navbar-bottom--visible');
+});
 // Функция ymaps.ready() будет вызвана, когда
     // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
     ymaps.ready(init);
