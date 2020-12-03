@@ -1978,6 +1978,10 @@ template {
     color: #ffffff;
     margin-left: 0;
     margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .navbar .navbar__search--mobile--visible {
+    margin-bottom: 20px;
   }
   .reviews-slider__item {
     padding: 0 30px 30px;
@@ -2071,6 +2075,9 @@ template {
 }
 
 @media (max-width: 576px) {
+  .navbar__search--mobile--visible {
+    max-width: 245px;
+  }
   .logo {
     width: 99px;
   }
@@ -2276,6 +2283,7 @@ template {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    max-width: 280px;
   }
   .footer__images-end {
     margin-bottom: 0;
