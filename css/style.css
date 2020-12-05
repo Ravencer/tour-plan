@@ -544,19 +544,6 @@ template {
   color: inherit;
 }
 
-.hotel__button-to {
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 19px;
-  width: 100%;
-  min-height: 45px;
-  border-radius: 4px;
-  background-color: #EC1F46;
-  border: none;
-  color: #ffffff;
-  cursor: pointer;
-}
-
 .hotel {
   padding-top: 23px;
   padding-bottom: 70px;
@@ -1624,6 +1611,11 @@ template {
   margin-bottom: 15px;
   -ms-flex-preferred-size: 48%;
       flex-basis: 48%;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #BDBDBD;
 }
 
 .footer__message {
@@ -1636,6 +1628,11 @@ template {
       flex-basis: 100%;
   margin-bottom: 23px;
   resize: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #BDBDBD;
 }
 
 .footer__button {
