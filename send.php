@@ -56,7 +56,7 @@ else {$result = "error";}
 // Отображение результата
 header('Location: thankyou.html');
 }
-if($email <> ''){
+elseif($email <> ''){
   $title = "Новое обращение Best Tour Plan";
   $body = "
   <h2>Новая подписка</h2>
