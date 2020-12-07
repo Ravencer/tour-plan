@@ -1706,6 +1706,10 @@ template {
   color: inherit;
 }
 
+.modal {
+  overflow: auto;
+}
+
 .modal__overlay {
   position: fixed;
   left: 0;
@@ -1746,6 +1750,8 @@ template {
 .modal__dialog--visible {
   visibility: visible;
   opacity: 1;
+  max-height: 100%;
+  overflow-y: auto;
 }
 
 .modal__close {
