@@ -117,6 +117,17 @@
       justify-content: flex-start
     &__end-text
       margin-right: 40px
+  .modal
+    &__input
+      order: 1
+    &__message
+      order: 2
+    &__button
+      order: 6
+    &__info
+      order: 5
+      margin-bottom: 15px
+      flex-basis: 100%
       
 @media (max-width: 768px)
   .container, .newsletter-wrapper
@@ -256,6 +267,9 @@
   .footer
     &__input
       flex-basis: 100%
+  .modal
+    &__dialog
+      padding: 20px 60px
 @media (max-width: 576px)
   .navbar
     &__search
@@ -396,6 +410,23 @@
       max-width: 280px
     &__images-end
       margin-bottom: 0
+  .modal
+    &__dialog
+      padding: 18px 55px
+    &__input
+      order: 1
+    &__message
+      order: 2
+    &__button
+      order: 6
+    &__info
+      order: 5
+      margin-bottom: 15px
+    &__title
+      &--inline
+        min-width: 168px
+        margin-bottom: 20px
+    
       
 
 
