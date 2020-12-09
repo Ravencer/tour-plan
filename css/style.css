@@ -58,6 +58,11 @@ img {
   cursor: pointer;
 }
 
+.invalid {
+  color: #EC1F46;
+  border-bottom: 1px solid #EC1F46;
+}
+
 @font-face {
   font-family: 'Muli';
   src: url("../fonts/Muli-Bold.woff2") format("woff2");
@@ -882,6 +887,12 @@ template {
   overflow: hidden;
 }
 
+.map__frame {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
 .packages {
   padding-bottom: 95px;
 }
@@ -1643,6 +1654,10 @@ template {
 }
 
 .footer__input {
+  width: 100%;
+}
+
+.footer__input-group {
   margin-bottom: 15px;
   -ms-flex-preferred-size: 48%;
       flex-basis: 48%;
@@ -1788,13 +1803,22 @@ template {
 
 .modal__input {
   width: 100%;
-  margin-bottom: 15px;
+}
+
+.modal__input-group {
+  width: 100%;
+  margin-top: 15px;
 }
 
 .modal__message {
   width: 100%;
   min-height: 123px;
+  margin-top: 15px;
   margin-bottom: 15px;
+}
+
+.modal__button {
+  margin-top: 15px;
 }
 
 .modal__info {
@@ -1840,7 +1864,7 @@ template {
   .represented-item {
     width: 100%;
   }
-  .footer__input {
+  .footer__input-group {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
@@ -1929,7 +1953,7 @@ template {
         grid-template-columns: repeat(6, 1fr);
     grid-row-gap: 40px;
   }
-  .footer__input {
+  .footer__input-group {
     -ms-flex-preferred-size: 49%;
         flex-basis: 49%;
   }
@@ -1993,7 +2017,7 @@ template {
   .footer__end-text {
     margin-right: 40px;
   }
-  .modal__input {
+  .modal__input-group {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
@@ -2038,7 +2062,7 @@ template {
   body {
     padding-top: 78px;
   }
-  .navbar__mobile--fixed {
+  .navbar--fixed {
     position: fixed;
     left: 0;
     top: 0;
@@ -2208,7 +2232,7 @@ template {
     padding-top: 40px;
     padding-bottom: 60px;
   }
-  .footer__input {
+  .footer__input-group {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
@@ -2404,7 +2428,7 @@ template {
     -ms-grid-columns: minmax(280px, 1fr);
         grid-template-columns: minmax(280px, 1fr);
   }
-  .footer__input {
+  .footer__input-group {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
@@ -2437,7 +2461,7 @@ template {
   .modal__dialog {
     padding: 18px 55px;
   }
-  .modal__input {
+  .modal__input-group {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;

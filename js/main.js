@@ -1,4 +1,5 @@
-
+$(document).ready(function(){ 
+  
   var hotelSlider = new Swiper(".hotel-slider", {
     loop: true,
     navigation: {
@@ -52,5 +53,39 @@
         modalOverlay.removeClass('modal__overlay--visible');
         modalDialog.removeClass('modal__dialog--visible');
       }
+      $('.form').each(function(){
+        $(this).validate({
+          errorClass: "invalid",
+          messages: {
+            name: {
+              required: "Please specify your name",
+              minlength: "The name must be at least 2 letters"
+            },
+            email: {
+              required: "Please fill this form with your Email",
+              email: ""
+            },
+            phone: {
+              required: "Phone is required",
+            },
+          },
+        });
+      })
+      $('.modal__input--tel').mask('+7 (ZZZ) ZZZ-ZZ-ZZ',{
+        translation: {
+          'Z': {
+            pattern: /[0-9]/, optional: true
+          }
+        }
+      });
+      $('.footer__input--tel').mask('+7 (ZZZ) ZZZ-ZZ-ZZ',{
+        translation: {
+          'Z': {
+            pattern: /[0-9]/, optional: true
+          }
+        }
+      });
+});
+
       
 

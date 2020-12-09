@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="navbar navbar__mobile--fixed">
+  <header class="navbar navbar--fixed">
     <div class="container">
       <div class="navbar-top">
         <a href="#" class="logo">
@@ -188,7 +188,7 @@
             <button data-toggle="modal" class="button booking__button">View Other Options</button>
           </div>
           <div id="map" class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.5414446132622!2d98.29703101525264!3d7.838257708655827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x305025650c33dbab%3A0xa67a542329d011e1!2z0J_RhdGD0LrQtdGCLCDQmtCw0YDQvtC9LCDQntGC0LXQu9GMINCl0LjQu9GC0L7QvQ!5e0!3m2!1sru!2sru!4v1606366166491!5m2!1sru!2sru" width="100%" height="213" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.5414446132622!2d98.29703101525264!3d7.838257708655827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x305025650c33dbab%3A0xa67a542329d011e1!2z0J_RhdGD0LrQtdGCLCDQmtCw0YDQvtC9LCDQntGC0LXQu9GMINCl0LjQu9GC0L7QvQ!5e0!3m2!1sru!2sru!4v1606366166491!5m2!1sru!2sru"  style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" class="map__frame"></iframe>
           </div>
         </div>
       </div>
@@ -578,15 +578,19 @@
         </div>
         <div class="footer__contact-form">
           <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
-          <form action="send.php" method="POST" class="footer__form">
+          <form action="send.php" method="POST" class="footer__form form">
 
-            <input type="text" placeholder="Your Full Name*" class="input footer__input footer__input--1"
-            name="name"
-            >
+            <div class="footer__input-group">
+              <input type="text" placeholder="Your Full Name*" class="input footer__input footer__input--1"
+              name="name" required
+              >
+            </div>
 
-            <input type="text" placeholder="Phone Number*" class="input footer__input footer__input--2"
-            name="phone"
-            >
+            <div class="footer__input-group">
+              <input type="text" placeholder="Phone Number*" class="input footer__input footer__input--2 footer__input--tel"
+              name="phone" required
+              >
+            </div>
 
             <textarea class="message footer__message" placeholder="Message"
             name="message"
@@ -619,19 +623,26 @@
         <img src="img/close.svg" alt="Icon: close">
       </a>
       <h3 class="modal__title modal__title--mb-3">Send us a message</h3>
-          <form action="send.php" method="POST" class="modal__form">
+          <form action="send.php" method="POST" class="modal__form form">
 
-            <input type="text" placeholder="Your Full Name*" class="input modal__input modal__input--1"
-            name="name"
+            
+            <div class="modal__input-group">
+              <input type="text" placeholder="Your Full Name*" class="input modal__input modal__input--1"
+            name="name" required minlength="2"
             >
+            </div>
 
-            <input type="text" placeholder="Phone Number*" class="input modal__input modal__input--2"
-            name="phone"
+            <div class="modal__input-group ">
+              <input type="tel" placeholder="Phone Number*" class="input modal__input modal__input--tel modal__input--2"
+            name="phone" required
             >
+            </div>
 
-            <input type="text" placeholder="Email*" class="input modal__input modal__input--3"
-            name="phone"
+            <div class="modal__input-group">
+              <input type="email" placeholder="Email*" class="input modal__input modal__input--3"
+            name="email" required
             >
+            </div>
 
             <textarea class="message modal__message" placeholder="Message"
             name="message"
@@ -646,6 +657,8 @@
   <script src="js/jquery-3.5.1.min.js"></script>
   <script src="js/parallax.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/jquery.mask.min.js"></script>
   <script defer src="js/main.js"></script>
 </body>
 </html>
