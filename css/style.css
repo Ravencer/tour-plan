@@ -2218,6 +2218,9 @@ template {
 }
 
 @media (max-width: 576px) {
+  .modal__dialog {
+    width: 95%;
+  }
   .navbar__search--mobile--visible {
     max-width: 245px;
   }
