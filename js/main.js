@@ -1,4 +1,4 @@
-$(document).ready(function(){
+
   var hotelSlider = new Swiper(".hotel-slider", {
     loop: true,
     navigation: {
@@ -53,4 +53,4 @@ $(document).ready(function(){
         modalDialog.removeClass('modal__dialog--visible');
       }
       
-});
+
