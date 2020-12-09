@@ -15,27 +15,28 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/aos.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="navbar navbar--fixed">
     <div class="container">
       <div class="navbar-top">
-        <a href="#" class="logo">
+        <a href="#" class="logo" data-aos="fade-right" data-aos-delay="100">
           <img 
           src="img/horizontal_logo.svg" 
           alt="Logo: Best Tour Plan" 
           class="logo__image">
         </a>
 
-        <form action="#" class="search navbar__search navbar__search--mobile--hidden">
+        <form action="#" class="search navbar__search navbar__search--mobile--hidden" data-aos="fade-right" data-aos-delay="200">
           <input type="text" placeholder="Search Location" class="search__input">
           <button class="search__button">
             <img src="img/search.svg" alt="Icon: search">
           </button>
         </form>
 
-        <a href="#" class="user navbar__user navbar__user--mobile--hidden">
+        <a href="#" class="user navbar__user navbar__user--mobile--hidden" data-aos="fade-right" data-aos-delay="300">
           <img 
           src="img/user_avatar.jpg" 
           alt="avatar: Nathan" 
@@ -198,7 +199,7 @@
     <div class="container">
       <h2 class="packages__title">Other Packages</h2>
       <div class="packages-grid">
-        <div class="packages-grid__item represented-item">
+        <div class="packages-grid__item represented-item" data-aos="fade-right" data-aos-delay="300">
           <div class="represented-item__left">
             <img src="img/package-1.jpg" alt="Image: package-1" class="represented-item__image">
             <span class="offer represented-item__offer">Flash Offer</span>
@@ -234,7 +235,7 @@
             </div>
           </div>
         </div>
-        <div class="packages-grid__item">
+        <div class="packages-grid__item" data-aos="fade-left" data-aos-delay="300">
           <div class="packages-grid__left">
             <img src="img/package-1.jpg" alt="Image: package-1" class="packages-grid__image">
             <span class="offer packages-grid__offer">Flash Offer</span>
@@ -264,7 +265,7 @@
             </div>
           </div>
         </div>
-        <div class="packages-grid__item">
+        <div class="packages-grid__item" data-aos="fade-right" data-aos-delay="300">
           <div class="packages-grid__left">
             <img src="img/package-1.jpg" alt="Image: package-1" class="packages-grid__image">
             <span class="offer packages-grid__offer">Flash Offer</span>
@@ -294,7 +295,7 @@
             </div>
           </div>
         </div>
-        <div class="packages-grid__item">
+        <div class="packages-grid__item" data-aos="fade-up" data-aos-delay="300">
           <div class="packages-grid__left">
             <img src="img/package-1.jpg" alt="Image: package-1" class="packages-grid__image">
             <span class="offer packages-grid__offer">Flash Offer</span>
@@ -324,7 +325,7 @@
             </div>
           </div>
         </div>
-        <div class="packages-grid__item">
+        <div class="packages-grid__item" data-aos="fade-left" data-aos-delay="300">
           <div class="packages-grid__left">
             <img src="img/package-1.jpg" alt="Image: package-1" class="packages-grid__image">
             <span class="offer packages-grid__offer">Flash Offer</span>
@@ -447,24 +448,24 @@
     <div class="container">
       <h2 class="activities__title">Other Activities</h2>
       <div class="activities-wrapper">
-        <div class="card activities__card">
+        <div class="card activities__card" data-aos="fade-up" data-aos-delay="100">
           <img src="img/card-image-1.jpg" alt="Image: activity" class="card__image">
           <h3 class="card__title">The curious corner 
             of chamarel</h3>
           <button class="card__button">Book now</button>
         </div>
-        <div class="card activities__card">
+        <div class="card activities__card" data-aos="fade-up" data-aos-delay="300">
           <img src="img/card-image-2.jpg" alt="Image: activity" class="card__image">
           <h3 class="card__title">Gymkhana club golf
             course</h3>
           <button class="card__button">Book now</button>
         </div>
-        <div class="card activities__card">
+        <div class="card activities__card" data-aos="fade-up" data-aos-delay="500">
           <img src="img/card-image-3.jpg" alt="Image: activity" class="card__image">
           <h3 class="card__title">Tamarind falls hiking trip - full day</h3>
           <button class="card__button">Book now</button>
         </div>
-        <div class="card activities__card">
+        <div class="card activities__card" data-aos="fade-up" data-aos-delay="700">
           <img src="img/card-image-4.jpg" alt="Image: activity" class="card__image">
           <h3 class="card__title">The blue marine discovery quest</h3>
           <button class="card__button">Book now</button>
@@ -478,7 +479,7 @@
         <img 
         src="img/vertical-logo.svg" 
         alt="Logo: Best Tour Plan" 
-        class="logo footer__logo">
+        class="logo footer__logo" data-aos="fade-right">
         <div class="footer__list footer__categories">
           <h3 class="footer__title">ALL CATEGORIES</h3>
           <ul class="footer__ul">
@@ -659,6 +660,7 @@
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/jquery.mask.min.js"></script>
+  <script src="js/aos.js"></script>
   <script defer src="js/main.js"></script>
 </body>
 </html>
