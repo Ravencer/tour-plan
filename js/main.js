@@ -62,8 +62,7 @@ $(document).ready(function(){
               minlength: "The name must be at least 2 letters"
             },
             email: {
-              required: "Please fill this form with your Email",
-              email: ""
+              required: "Please fill this form with your Email"
             },
             phone: {
               required: "Phone is required",

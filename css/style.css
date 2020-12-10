@@ -28,6 +28,22 @@ img {
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
+  color: #333333;
+}
+
+.input::-webkit-input-placeholder {
+  color: #BDBDBD;
+}
+
+.input:-ms-input-placeholder {
+  color: #BDBDBD;
+}
+
+.input::-ms-input-placeholder {
+  color: #BDBDBD;
+}
+
+.input::placeholder {
   color: #BDBDBD;
 }
 
@@ -42,6 +58,22 @@ img {
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
+  color: #333333;
+}
+
+.message::-webkit-input-placeholder {
+  color: #BDBDBD;
+}
+
+.message:-ms-input-placeholder {
+  color: #BDBDBD;
+}
+
+.message::-ms-input-placeholder {
+  color: #BDBDBD;
+}
+
+.message::placeholder {
   color: #BDBDBD;
 }
 
@@ -1588,9 +1620,9 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1675,6 +1707,9 @@ template {
   font-size: 12px;
   line-height: 15px;
   color: #E0E0E0;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .footer__end-info {
