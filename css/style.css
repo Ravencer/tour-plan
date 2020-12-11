@@ -1920,6 +1920,9 @@ template {
   .footer__end-text {
     margin-right: 40px;
   }
+  .footer__end-text:hover {
+    text-decoration: none;
+  }
   .footer__link::after {
     display: none;
   }
