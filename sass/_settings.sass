@@ -1,5 +1,15 @@
 *
   box-sizing: border-box
+@keyframes button-animation-1
+  0%
+    background-color: $primary
+  100%
+    background-color: $dark
+@keyframes button-animation-2
+  0%
+    background-color: #fff
+  100%
+    background: linear-gradient(90deg, #d53369 0%, #daae51 100%)
 body
   font-family: 'Mulish', sans-serif
   color: $text-color
@@ -47,6 +57,8 @@ img
   border: none
   border-radius: 4px
   cursor: pointer
+  &:hover
+    animation: button-animation-2 0.3s linear 1 normal running 0s forwards
 .invalid
   color: $primary
   border-bottom: 1px solid $primary

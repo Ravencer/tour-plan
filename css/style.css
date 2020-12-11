@@ -2,6 +2,24 @@
   box-sizing: border-box;
 }
 
+@keyframes button-animation-1 {
+  0% {
+    background-color: #EC1F46;
+  }
+  100% {
+    background-color: #0A223D;
+  }
+}
+
+@keyframes button-animation-2 {
+  0% {
+    background-color: #fff;
+  }
+  100% {
+    background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+  }
+}
+
 body {
   font-family: 'Mulish', sans-serif;
   color: #333333;
@@ -65,6 +83,10 @@ img {
   cursor: pointer;
 }
 
+.button:hover {
+  animation: button-animation-2 0.3s linear 1 normal running 0s forwards;
+}
+
 .invalid {
   color: #EC1F46;
   border-bottom: 1px solid #EC1F46;
@@ -111,6 +133,26 @@ img {
   text-transform: uppercase;
   font-size: 14px;
   line-height: 18px;
+  cursor: pointer;
+}
+
+.navbar-menu__link::after {
+  background-color: #EC1F46;
+  display: block;
+  content: "";
+  height: 1px;
+  width: 0%;
+  -webkit-transition: width .3s ease-in-out;
+  -moz--transition: width .3s ease-in-out;
+  transition: width .3s ease-in-out;
+}
+
+.navbar-menu__link:hover::after {
+  width: 100%;
+}
+
+.navbar-menu__link:focus::after {
+  width: 100%;
 }
 
 .navbar-menu__item--mobile--visible {
@@ -149,6 +191,11 @@ img {
   right: 0;
   border: none;
   background-color: #EC1F46;
+  cursor: pointer;
+}
+
+.search__button:hover {
+  animation: button-animation-1 0.5s linear 1 normal running 0s forwards;
 }
 
 .user {
@@ -659,6 +706,7 @@ template {
   background-color: #EC1F46;
   border-radius: 4px;
   align-self: flex-end;
+  cursor: pointer;
 }
 
 .rating__text {
@@ -767,8 +815,37 @@ template {
   line-height: 25px;
 }
 
+.booking__number-link {
+  cursor: pointer;
+}
+
+.booking__number-link::after {
+  background-color: #EC1F46;
+  display: block;
+  content: "";
+  height: 1px;
+  width: 0%;
+  -webkit-transition: width .3s ease-in-out;
+  -moz--transition: width .3s ease-in-out;
+  transition: width .3s ease-in-out;
+}
+
+.booking__number-link:hover::after {
+  width: 100%;
+}
+
+.booking__number-link:focus::after {
+  width: 100%;
+}
+
 .booking__num {
   margin-left: 8px;
+  display: inline-block;
+}
+
+.booking__num:hover {
+  text-decoration: underline;
+  text-decoration-color: #EC1F46;
 }
 
 .booking__button {
@@ -804,7 +881,7 @@ template {
   cursor: pointer;
 }
 
-.button--home {
+.hotel-info__button--home {
   color: #ffffff;
   padding: 10px 27px;
   min-width: 120px;
@@ -813,6 +890,10 @@ template {
   background-color: #EC1F46;
   border-radius: 4px;
   cursor: pointer;
+}
+
+.hotel-info__button--home:hover {
+  animation: button-animation-1 0.5s linear 1 normal running 0s forwards;
 }
 
 .hotel-info__thank {
@@ -873,6 +954,14 @@ template {
   width: 100%;
   height: 250px;
   object-fit: cover;
+}
+
+.packages-grid__button {
+  cursor: pointer;
+}
+
+.packages-grid__button:hover {
+  animation: button-animation-2 0.3s linear 1 normal running 0s forwards;
 }
 
 .packages-grid__offer {
@@ -1165,6 +1254,11 @@ template {
   color: #ffffff;
   width: 65px;
   overflow: hidden;
+  cursor: pointer;
+}
+
+.subscribe__button:hover {
+  animation: button-animation-2 0s linear 1 normal running 0s forwards;
 }
 
 .reviews {
@@ -1366,6 +1460,10 @@ template {
   cursor: pointer;
 }
 
+.card__button:hover {
+  animation: button-animation-2 0.3s linear 1 normal running 0s forwards;
+}
+
 .footer {
   background-color: #0A223D;
   color: #ffffff;
@@ -1468,6 +1566,26 @@ template {
 .footer__link {
   text-decoration: none;
   color: inherit;
+  cursor: pointer;
+}
+
+.footer__link::after {
+  background-color: #EC1F46;
+  display: block;
+  content: "";
+  height: 1px;
+  width: 0%;
+  -webkit-transition: width .3s ease-in-out;
+  -moz--transition: width .3s ease-in-out;
+  transition: width .3s ease-in-out;
+}
+
+.footer__link:hover::after {
+  width: 100%;
+}
+
+.footer__link:focus::after {
+  width: 100%;
 }
 
 .footer__input {
@@ -1495,10 +1613,9 @@ template {
 
 .footer__end-info {
   grid-column: 2 / 4;
-  display: flex;
-  justify-content: space-evenly;
   align-items: center;
   margin-top: 95px;
+  text-align: center;
 }
 
 .footer__images-end {
@@ -1515,11 +1632,25 @@ template {
   font-size: 12px;
   line-height: 15px;
   color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+.footer__end-text:hover {
+  text-decoration: underline;
+  text-decoration-color: #EC1F46;
 }
 
 .footer__mail {
   text-decoration: none;
   color: inherit;
+  cursor: pointer;
+}
+
+.footer__mail:hover {
+  text-decoration: underline;
+  text-decoration-color: #EC1F46;
 }
 
 .modal {
@@ -1665,6 +1796,9 @@ template {
   .logo {
     width: 132px;
   }
+  .button:hover {
+    animation: none;
+  }
   .navbar-top {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -1680,8 +1814,17 @@ template {
     font-size: 12px;
     line-height: 15px;
   }
+  .navbar-menu__link::after {
+    display: none;
+  }
   .search__input {
     width: 340px;
+  }
+  .search__button:hover {
+    animation: none;
+  }
+  .hotel-info__button--home:hover {
+    animation: none;
   }
   .hotel-grid {
     flex-direction: column;
@@ -1725,6 +1868,9 @@ template {
   .packages-grid__item {
     width: 280px;
   }
+  .packages-grid__button:hover {
+    animation: none;
+  }
   .footer-wrapper {
     grid-template-columns: repeat(6, 1fr);
     grid-row-gap: 40px;
@@ -1765,12 +1911,20 @@ template {
     justify-content: flex-end;
   }
   .footer__end-info {
+    display: flex;
+    justify-content: space-evenly;
     grid-row: 5;
     grid-column: 1 / 3;
     justify-content: flex-start;
   }
   .footer__end-text {
     margin-right: 40px;
+  }
+  .footer__link::after {
+    display: none;
+  }
+  .footer__mail:hover {
+    text-decoration: none;
   }
   .modal__input-group {
     order: 1;
@@ -1785,6 +1939,12 @@ template {
     order: 5;
     margin-bottom: 15px;
     flex-basis: 100%;
+  }
+  .subscribe__button:hover {
+    animation: none;
+  }
+  .booking__num:hover {
+    text-decoration: none;
   }
 }
 
@@ -1948,6 +2108,9 @@ template {
   }
   .footer__input-group {
     flex-basis: 100%;
+  }
+  .footer__end-text {
+    margin-right: 20px;
   }
   .modal__dialog {
     padding: 20px 60px;

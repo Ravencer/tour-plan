@@ -91,6 +91,7 @@
   background-color: $primary
   border-radius: 4px
   align-self: flex-end
+  cursor: pointer
   &__text
     font-style: normal
     font-weight: 600
@@ -171,8 +172,27 @@
     font-weight: 600
     font-size: 18px
     line-height: 25px
+    &-link
+      cursor: pointer
+      &::after
+        background-color: $primary
+        display: block
+        content: ""
+        height: 1px
+        width: 0%
+        -webkit-transition: width .3s ease-in-out
+        -moz--transition: width .3s ease-in-out
+        transition: width .3s ease-in-out
+      &:hover::after
+        width: 100%
+      &:focus::after
+        width: 100%
   &__num
     margin-left: 8px
+    display: inline-block
+    &:hover
+      text-decoration: underline
+      text-decoration-color: $primary
   &__button
     font-weight: 600
     font-size: 14px
@@ -200,16 +220,18 @@
     height: 100%
     border: none
     cursor: pointer
-.button--home
-  color: $light
-  padding: 10px 27px
-  min-width: 120px
-  margin: 0
-  border: none
-  background-color: $primary
-  border-radius: 4px
-  cursor: pointer
 .hotel-info
+  &__button--home
+    color: $light
+    padding: 10px 27px
+    min-width: 120px
+    margin: 0
+    border: none
+    background-color: $primary
+    border-radius: 4px
+    cursor: pointer
+    &:hover
+      animation: button-animation-1 0.5s linear 1 normal running 0s forwards
   &__thank
     display: flex
     align-items: center
@@ -218,6 +240,7 @@
   &__link-home
     display: block
     margin-top: 15px
+    
 .hotel-info__text-thank
   flex-basis: 100%
   
