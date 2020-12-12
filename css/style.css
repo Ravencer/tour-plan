@@ -24,7 +24,7 @@ body {
   font-family: 'Mulish', sans-serif;
   color: #333333;
   background-color: #F5FAFE;
-  overflow: auto;
+  overflow-x: hidden;
 }
 
 .container {
@@ -639,6 +639,7 @@ template {
   background-position: center;
   background-size: 10px;
   background-color: transparent;
+  outline: none;
 }
 
 .hotel-slider__button--next {
@@ -1367,6 +1368,7 @@ template {
   background-color: transparent;
   cursor: pointer;
   z-index: 99;
+  outline: none;
 }
 
 .reviews-slider__button--prev {
@@ -2185,6 +2187,8 @@ template {
   }
   .navbar .navbar__search--mobile--visible {
     margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
   }
   .reviews-slider__item {
     padding: 0 30px 30px;
@@ -2272,12 +2276,23 @@ template {
   }
 }
 
+@media (max-width: 624px) {
+  .packages-grid {
+    grid-template-columns: fit-content(92%);
+  }
+  .packages-grid__item {
+    width: 100%;
+  }
+}
+
 @media (max-width: 576px) {
   .modal__dialog {
     width: 95%;
   }
   .navbar__search--mobile--visible {
     max-width: 245px;
+    margin-right: auto;
+    margin-left: auto;
   }
   .logo {
     width: 99px;
@@ -2390,6 +2405,15 @@ template {
   }
   .footer__end-text:nth-child(3) {
     margin-right: 0;
+  }
+  .packages-grid {
+    grid-template-columns: fit-content(100%);
+  }
+  .packages-grid__button {
+    padding: 8px 23px;
+    min-width: 100px;
+    font-size: 12px;
+    line-height: 15px;
   }
 }
 

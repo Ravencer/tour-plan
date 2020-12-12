@@ -312,6 +312,8 @@
         &--mobile
           &--visible
             margin-bottom: 20px
+            margin-right: auto
+            margin-left: auto
   .reviews
     &-slider
       &__item
@@ -381,6 +383,11 @@
   .modal
     &__dialog
       padding: 20px 60px
+@media (max-width: 624px)
+  .packages-grid
+    grid-template-columns: fit-content(92%)
+    &__item
+      width: 100%
 @media (max-width: 576px)
   .modal
     &__dialog
@@ -390,6 +397,8 @@
       &--mobile
         &--visible
           max-width: 245px
+          margin-right: auto
+          margin-left: auto
   .logo
     width: 99px
   .hotel
@@ -480,6 +489,13 @@
       margin-right: 10px
     &__end-text:nth-child(3)
       margin-right: 0
+  .packages-grid
+    grid-template-columns: fit-content(100%)
+    &__button
+      padding: 8px 23px
+      min-width: 100px
+      font-size: 12px
+      line-height: 15px
 @media (max-width: 320px)
   .hotel
     padding-top: 5px
