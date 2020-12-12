@@ -35,13 +35,22 @@
       background-position: center
       background-size: 10px
       background-color: transparent
-      outline: none
+      outline: none !important
+      &:hover
+        outline: none !important
+        border: none !important
+      &:focus
+        outline: none !important
+        border: none !important
+      &:active
+        outline: none !important
+        border: none !important
       &--next
         right: 18px
         background-image: url(../img/arrow-next.svg)
       &--prev
         left: 18px
-        background-image: url(../img/arrow-prev.svg) 
+        background-image: url(../img/arrow-prev.svg)
   &-info
     display: flex
     align-items: center
@@ -225,7 +234,13 @@
     border: none
     cursor: pointer
 .hotel-info
-  &__button--home
+  &__thank
+    display: flex
+    align-items: center
+    justify-content: space-between
+    flex-wrap: wrap
+.hotel
+  &__button-home
     color: $light
     padding: 10px 27px
     min-width: 120px
@@ -234,17 +249,9 @@
     background-color: $primary
     border-radius: 4px
     cursor: pointer
+    margin-top: 15px
     &:hover
       animation: button-animation-1 0.5s linear 1 normal running 0s forwards
-  &__thank
-    display: flex
-    align-items: center
-    justify-content: space-between
-    flex-wrap: wrap
-  &__link-home
-    display: block
-    margin-top: 15px
-    
 .hotel-info__text-thank
   flex-basis: 100%
   

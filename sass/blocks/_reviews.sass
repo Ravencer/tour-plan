@@ -51,12 +51,21 @@
       background-color: transparent
       cursor: pointer
       z-index: 99
-      outline: none
+      outline: none !important
+      &:hover
+        outline: none !important
+        border: none !important
+      &:focus
+        outline: none !important
+        border: none !important
+      &:active
+        outline: none !important
+        border: none !important
       &--prev
         background-image: url(../img/arrow-prev-secondary.svg)
         left: 0
         transform: translate(59%, -213%)
-      &--next
+      &--next 
         background-image: url(../img/arrow-next-secondary.svg)
         right: 0
         transform: translate(-59%, -210%)
