@@ -67,6 +67,9 @@ $(document).ready(function(){
             phone: {
               required: "Phone is required",
             },
+            emailNews: {
+              required: "Please fill this form with your Email"
+            }
           },
         });
       })
@@ -85,7 +88,6 @@ $(document).ready(function(){
         }
       });
       	
-      
       AOS.init();
       
 });

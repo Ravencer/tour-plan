@@ -174,11 +174,75 @@
   .container, .newsletter-wrapper
     max-width: 734px
     width: 92%
+  .navbar-bottom
+    &__container
+      width: 88%  
   .reviews
     &__title
       font-size: 30px
       font-weight: bold
       margin-bottom: 50px
+  .navbar-menu
+    &__item
+      font-family: Mulish
+      font-style: normal
+      font-size: 12px
+      line-height: 15px
+  .navbar
+    &__search
+      margin-left: 47px
+      margin-right: 73px
+      max-width: 340px
+  .reviews
+    padding-top: 43px
+    padding-bottom: 54px
+    &-slider
+      &__profile
+        margin-bottom: 35px
+      &__username
+        margin-bottom: 3px
+      &__button
+        &--prev
+          transform: translate(6%, -158%)
+        &--next
+          transform: translate(-15%, -163%)
+  .card
+    &__title
+      &--wid153
+        max-width: 153px
+      &--wid200
+        max-width: 200px
+  .activities
+    padding-bottom: 60px
+  .footer
+    padding-bottom: 33px
+    padding-top: 73px
+    &__contact-form
+      padding-top: 0px
+    &__input-group
+      flex-basis: 48%
+    &__legal
+      margin-left: 40px
+    &__logo
+      margin-top: 0px
+      width: 100px
+      height: 110px
+      object-fit: cover
+    &__end-info
+      margin-top: 23px
+    &__images-end
+      margin-top: 15px
+      width: 136px
+      margin-right: 5px
+    &__end-text
+      margin-right: 15px
+      font-family: Mulish
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+    &__contact-details
+      padding-top: 20px
 @media (max-width: 760px)
   .container
     max-width: 576px
@@ -307,6 +371,8 @@
     padding-top: 40px
     padding-bottom: 60px
   .footer
+    &__legal
+      padding-left: 70px
     &__input
       &-group
         flex-basis: 100%
@@ -352,6 +418,9 @@
     width: 100%
   .footer
     padding-bottom: 0px
+    &__legal
+      margin-left: 0px
+      padding-left: 0px
     &-wrapper
       grid-template-columns: 1fr
     &__logo
@@ -412,8 +481,20 @@
     &__end-text:nth-child(3)
       margin-right: 0
 @media (max-width: 320px)
+  .hotel
+    padding-top: 5px
+  .hotel-slider
+    height: 179px
+    margin-top: 18px
+  
+  .container, .newsletter-wrapper
+    width: 84%
+  .navbar-container
+    width: 94%
+    &-top
+      padding-right: 13px  
   .reviews
-    padding-bottom: 50px
+    padding-bottom: 0px
     &__title
       font-size: 18px
       line-height: 23px
@@ -429,7 +510,7 @@
         font-size: 12px
         line-height: 160%
   .activities
-    padding-top: 40px
+    padding-top: 0px
     &__title
       font-size: 18px
       margin-bottom: 36px

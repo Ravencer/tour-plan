@@ -14,6 +14,7 @@ body
   font-family: 'Mulish', sans-serif
   color: $text-color
   background-color: $secondary
+  overflow: auto
 .container
   max-width: 1110px
   margin: auto
@@ -59,10 +60,13 @@ img
   cursor: pointer
   &:hover
     animation: button-animation-2 0.3s linear 1 normal running 0s forwards
+.invalid[for='emailNews']
+  color: $primary
+  border-bottom: 1px solid $primary
+  position: absolute
+  top: 60px
+  left: 0px
 .invalid
   color: $primary
   border-bottom: 1px solid $primary
-
-
-
   

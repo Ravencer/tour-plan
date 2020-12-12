@@ -20,7 +20,7 @@
 </head>
 <body>
   <header class="navbar navbar--fixed">
-    <div class="container">
+    <div class="container navbar__container">
       <div class="navbar-top">
         <a href="index.html" class="logo" data-aos="fade-right" data-aos-delay="100">
           <img 
@@ -30,7 +30,7 @@
         </a>
 
         <form action="#" class="search navbar__search navbar__search--mobile--hidden" data-aos="fade-right" data-aos-delay="200">
-          <input type="text" placeholder="Search Location" class="search__input">
+          <input type="text" placeholder="Search Location" class="search__input navbar__input">
           <button class="search__button">
             <img src="img/search.svg" alt="Icon: search">
           </button>
@@ -51,7 +51,7 @@
       </div>
     </div>
     <div class="navbar-bottom">
-      <div class="container">
+      <div class="container navbar-bottom__container">
         <ul class="navbar-menu">
           <li class="navbar-menu__item navbar-menu__item--mobile--visible">
             <a href="#" class="user navbar__user navbar__user--mobile--visible">
@@ -206,11 +206,11 @@
           </div>
           <div class="represented-item__description">
             <div class="represented-item__rating">
-              <img src="img/Star.svg" alt="star">
-              <img src="img/Star.svg" alt="star">
-              <img src="img/Star.svg" alt="star">
-              <img src="img/Star.svg" alt="star">
-              <img src="img/Star.svg" alt="star">
+              <img class="represented-item__element" src="img/Star.svg" alt="star">
+              <img class="represented-item__element" src="img/Star.svg" alt="star">
+              <img class="represented-item__element" src="img/Star.svg" alt="star">
+              <img class="represented-item__element" src="img/Star.svg" alt="star">
+              <img class="represented-item__element" src="img/Star.svg" alt="star">
             </div>
             <h3 class="represented-item__title">Hotel Blue Haven</h3>
             <p class="represented-item__text">Aute quis duis excepteur excepteur ipsum cat eiusmod consectetur enim laborum magna llit. Ipsum est fugiat velit ea llamco do esse ut in veniam sun in onsequat. Aute quis duis epteur excepteur ipsum occaecat eiusmod nsectetur enim laborum magna mollit. Ipsum est fugiat velit ea ullamco do</p>
@@ -366,9 +366,11 @@
         <span class="newsletter-title__strong">Newsletter</span>
       </h2>
       <form action="send.php" method="POST" class="subscribe newsletter__subscribe form">
-        <input type="email" placeholder="Your email address" class="subscribe__input input"
-        name="email" required
+        <div class="input__group">
+          <input type="email" placeholder="Your email address" class="subscribe__input input"
+        name="emailNews" required
         >
+        </div>
         <button class="subscribe__button">
           Send
         </button>
@@ -450,31 +452,31 @@
       <div class="activities-wrapper">
         <div class="card activities__card" data-aos="fade-up" data-aos-delay="100">
           <img src="img/card-image-1.jpg" alt="Image: activity" class="card__image">
-          <h3 class="card__title">The curious corner 
+          <h3 class="card__title">The curious corner <br> 
             of chamarel</h3>
           <button data-toggle="modal" class="card__button">Book now</button>
         </div>
         <div class="card activities__card" data-aos="fade-up" data-aos-delay="300">
           <img src="img/card-image-2.jpg" alt="Image: activity" class="card__image">
-          <h3 class="card__title">Gymkhana club golf
+          <h3 class="card__title card__title--wid153">Gymkhana club golf
             course</h3>
           <button data-toggle="modal" class="card__button">Book now</button>
         </div>
         <div class="card activities__card" data-aos="fade-up" data-aos-delay="500">
           <img src="img/card-image-3.jpg" alt="Image: activity" class="card__image">
-          <h3 class="card__title">Tamarind falls hiking trip - full day</h3>
+          <h3 class="card__title">Tamarind falls hiking <br> trip - full day</h3>
           <button data-toggle="modal" class="card__button">Book now</button>
         </div>
         <div class="card activities__card" data-aos="fade-up" data-aos-delay="700">
           <img src="img/card-image-4.jpg" alt="Image: activity" class="card__image">
-          <h3 class="card__title">The blue marine discovery quest</h3>
+          <h3 class="card__title card__title--wid200">The blue marine discovery quest</h3>
           <button data-toggle="modal" class="card__button">Book now</button>
         </div>
       </div>
     </div>
   </section>
   <footer class="footer">
-    <div class="container">
+    <div class="container footer__container">
       <div class="footer-wrapper">
         <a href="index.html" class="footer__logo" data-aos="fade-right">
           <img 
@@ -513,7 +515,7 @@
           </ul>
         </div>
         <div class="footer__list footer__additional">
-          <h3 class="footer__title">ADDITIONAL INFORMATION</h3>
+          <h3 class="footer__title">ADDITIONAL<span class="footer__nbsp">&nbsp;</span>INFORMATION</h3>
           <ul class="footer__ul">
             <li class="footer__item">
               <a href="#" class="footer__link">About Us</a>
@@ -567,7 +569,7 @@
           </ul>
         </div>
         <div class="footer__contact-details">
-          <h3 class="footer__title footer__title--mb-3">Contact Details</h3>
+          <h3 class="footer__title footer__title--mb-3 footer__title--contact">Contact Details</h3>
           <p class="footer__text">Feel free to contact us by phone, email or by our contact form</p>
           <ul class="footer__ul">
             <li class="footer__item footer__item--mb-2"> <div class="footer__icon-wrapper"><img src="img/map-marker.svg" alt="Icon: map-marker" class="footer__icon"></div> 9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United States</li>
@@ -581,7 +583,7 @@
           </ul>
         </div>
         <div class="footer__contact-form">
-          <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
+          <h3 class="footer__title footer__title--mb-3 footer__title--send">Send us a message</h3>
           <form action="send.php" method="POST" class="footer__form form">
 
             <div class="footer__input-group">
@@ -608,7 +610,7 @@
         </div>
         <div class="footer__end-info">
           <a href="index.html" class="footer__end-text">Disclaimer</a>
-          <a href="index.html" class="footer__end-text">Conditions&nbsp;of&nbsp;Use</a>
+          <a href="index.html" class="footer__end-text">Conditions&nbsp;of&nbsp;use</a>
           <a href="index.html" class="footer__end-text">Cancellation&nbsp;policy</a>
         </div>
         <div class="footer__images-end">
