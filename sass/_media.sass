@@ -255,7 +255,32 @@
       margin-left: auto
       margin-right: auto
   .represented-item
-    display: none
+    width: 280px
+    &__text
+      display: none
+    &__rating
+      display: none
+    &__left
+      flex-basis: 100%
+      width: 280px
+      height: 250px
+    &__image
+      width: 100%
+      height: 100%
+      object-fit: cover
+    &__description
+      margin-right: 0
+      margin-left: 0
+      padding-left: 32px
+      max-width: 100%
+    &__features
+      margin-bottom: 25px
+    &__title
+      margin-bottom: 15px
+    &__button
+      justify-content: flex-end
+    &__buy
+      flex-basis: 100%
   .packages-grid
     justify-content: space-evenly
     grid-gap: 15px
@@ -401,6 +426,9 @@
     grid-template-columns: 1fr
     &__item
       width: 100%
+  .represented-item
+    width: 100%
+    grid-column: 1 / 2
 @media (max-width: 576px)
   .modal
     &__dialog
@@ -526,9 +554,9 @@
     height: 179px
     margin-top: 18px
   .container, .newsletter-wrapper
-    width: 94%
+    width: 88%
   .navbar-container
-    width: 94%
+    width: 88%
     &-top
       padding-right: 13px  
   .reviews
@@ -548,7 +576,7 @@
         font-size: 12px
         line-height: 160%
   .activities
-    padding-top: 40px
+    padding-top: 20px
     &__title
       font-size: 18px
       margin-bottom: 36px
@@ -562,6 +590,10 @@
       line-height: 20px
   .footer
     padding-top: 60px
+    &__input-group
+      flex-basis: 98%
+    &__message
+      flex-basis: 98%
     &__info
       display: inline-block
       flex-basis: 100%
@@ -596,6 +628,7 @@
       padding-top: 0px
     &__title--contact
       margin-top: 0
+      margin-bottom: 20px
     &__text
       margin-top: 0px
     &__icon-wrapper
@@ -603,7 +636,7 @@
     &__item--mb-2
       margin-bottom: 15px
     &__title--send
-      margin-bottom: 20px
+      margin-bottom: 10px
     &__end-info
       margin-top: 0px
       justify-content: flex-start
@@ -613,6 +646,8 @@
       grid-row: 8
       margin-top: 25px
       margin-right: 0px
+      margin-bottom: 25px
+      margin-left: 0
       
   .modal
     &__dialog
