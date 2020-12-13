@@ -2385,7 +2385,7 @@ template {
     height: 250px;
   }
   .newsletter {
-    padding: 76px 0 83px 0;
+    padding: 76px 0 76px 0;
   }
   .newsletter-title__strong {
     font-size: 30px;
@@ -2526,7 +2526,8 @@ template {
     padding-right: 13px;
   }
   .reviews {
-    padding-bottom: 50px;
+    padding-bottom: 58px;
+    padding-top: 41px;
   }
   .reviews__title {
     font-size: 18px;
@@ -2543,8 +2544,21 @@ template {
     font-size: 12px;
     line-height: 160%;
   }
+  .reviews-slider__profile {
+    margin-bottom: 30px;
+  }
+  .reviews-slider__button {
+    top: 24px;
+  }
+  .reviews-slider__button--next {
+    margin-right: -90px;
+  }
+  .reviews-slider__button--prev {
+    margin-left: -90px;
+  }
   .activities {
-    padding-top: 20px;
+    padding-top: 34px;
+    padding-bottom: 45px;
   }
   .activities__title {
     font-size: 18px;
@@ -2559,13 +2573,19 @@ template {
     line-height: 20px;
   }
   .footer {
-    padding-top: 60px;
+    padding-top: 68px;
+  }
+  .footer-wrapper {
+    grid-row-gap: 31px;
   }
   .footer__input-group {
-    flex-basis: 98%;
+    flex-basis: 100%;
   }
   .footer__message {
-    flex-basis: 98%;
+    flex-basis: 100%;
+  }
+  .footer__ul {
+    margin-top: 0px;
   }
   .footer__info {
     display: inline-block;
@@ -2581,13 +2601,25 @@ template {
   }
   .footer__message {
     order: 2;
+    margin-bottom: 16px;
   }
   .footer__button {
     order: 4;
   }
+  .footer__title {
+    margin-bottom: 17px;
+  }
   .footer__title--inline {
     min-width: 168px;
     margin-bottom: 20px;
+    margin-top: 6px;
+  }
+  .footer__title--contact {
+    margin-bottom: 29px !important;
+    margin-top: 8px !important;
+  }
+  .footer__title--send {
+    margin-bottom: 16px !important;
   }
   .footer__social-network {
     display: flex;
@@ -2608,6 +2640,7 @@ template {
   }
   .footer__contact-details {
     padding-top: 0px;
+    margin-bottom: 5px;
   }
   .footer__title--contact {
     margin-top: 0;
@@ -2615,18 +2648,19 @@ template {
   }
   .footer__text {
     margin-top: 0px;
+    margin-bottom: 18px;
   }
   .footer__icon-wrapper {
     min-width: 30px;
   }
   .footer__item--mb-2 {
-    margin-bottom: 15px;
+    margin-bottom: 22px;
   }
   .footer__title--send {
     margin-bottom: 10px;
   }
   .footer__end-info {
-    margin-top: 0px;
+    margin-top: -4px;
     justify-content: flex-start;
   }
   .footer__end-text {

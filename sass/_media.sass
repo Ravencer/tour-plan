@@ -448,7 +448,7 @@
     &-slider
       height: 250px
   .newsletter
-    padding: 76px 0 83px 0
+    padding: 76px 0 76px 0
     &-title
       &__strong
         font-size: 30px
@@ -560,7 +560,8 @@
     &-top
       padding-right: 13px  
   .reviews
-    padding-bottom: 50px
+    padding-bottom: 58px
+    padding-top: 41px
     &__title
       font-size: 18px
       line-height: 23px
@@ -575,8 +576,17 @@
         font-weight: normal
         font-size: 12px
         line-height: 160%
+      &__profile
+        margin-bottom: 30px
+      &__button
+        top: 24px
+        &--next
+          margin-right: -90px
+        &--prev
+          margin-left: -90px
   .activities
-    padding-top: 20px
+    padding-top: 34px
+    padding-bottom: 45px
     &__title
       font-size: 18px
       margin-bottom: 36px
@@ -589,11 +599,15 @@
       font-size: 16px
       line-height: 20px
   .footer
-    padding-top: 60px
+    padding-top: 68px
+    &-wrapper
+      grid-row-gap: 31px 
     &__input-group
-      flex-basis: 98%
+      flex-basis: 100%
     &__message
-      flex-basis: 98%
+      flex-basis: 100%
+    &__ul
+      margin-top: 0px
     &__info
       display: inline-block
       flex-basis: 100%
@@ -606,12 +620,20 @@
         order: 1
     &__message
       order: 2
+      margin-bottom: 16px
     &__button
       order: 4
     &__title
+      margin-bottom: 17px
       &--inline
         min-width: 168px
         margin-bottom: 20px
+        margin-top: 6px
+      &--contact
+        margin-bottom: 29px !important
+        margin-top: 8px !important
+      &--send
+        margin-bottom: 16px !important
     &__social-network
       display: flex
       flex-wrap: wrap
@@ -626,19 +648,21 @@
       grid-row: 4
     &__contact-details
       padding-top: 0px
+      margin-bottom: 5px
     &__title--contact
       margin-top: 0
       margin-bottom: 20px
     &__text
       margin-top: 0px
+      margin-bottom: 18px
     &__icon-wrapper
       min-width: 30px
     &__item--mb-2
-      margin-bottom: 15px
+      margin-bottom: 22px
     &__title--send
       margin-bottom: 10px
     &__end-info
-      margin-top: 0px
+      margin-top: -4px
       justify-content: flex-start
     &__end-text
       margin-right: 10px
